@@ -140,13 +140,23 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/display.js":
+/*!************************!*\
+  !*** ./src/display.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ display)\n/* harmony export */ });\nconst display = (obj) => {\n  const displayContainer = document.querySelector('.display');\n  const table = document.createElement('table');\n  table.className = 'table table-striped';\n  const tbody = document.createElement('tbody');\n  table.appendChild(tbody);\n  tbody.innerHTML = `\n                         <tr scope=\"row\">      \n                            <td> ${obj.name}: ${obj.score}</td>\n                          </tr>\n                    \n                    `;\n\n  displayContainer.appendChild(table);\n};\n\n\n\n//# sourceURL=webpack://webpack-boilerplate/./src/display.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n\n\n\n//# sourceURL=webpack://webpack-boilerplate/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var _display__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./display */ \"./src/display.js\");\n\n\n\n\n(0,_display__WEBPACK_IMPORTED_MODULE_2__[\"default\"])({ name: 'wilmer', score: '20' });\n(0,_display__WEBPACK_IMPORTED_MODULE_2__[\"default\"])({ name: 'paola', score: '30' });\n\n//# sourceURL=webpack://webpack-boilerplate/./src/index.js?");
 
 /***/ }),
 
