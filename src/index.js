@@ -1,2 +1,2 @@
 import './style.css';
-alert("hello world");
+import 'bootstrap/dist/css/bootstrap.min.css';

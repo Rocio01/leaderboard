@@ -4,9 +4,40 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Leaderboard</title>
 </head>
 <body>
-  <h1>Hello World</h1>
+  <h1 class="m-4">Leaderboard</h1>
+  <section class="row">
+    <div class="display col-sm-6 mr-5">
+      
+        
+          <div class="text-center row ">
+            <h2 class="display col-sm-6">Recent scores</h2>
+            <button type="button" class="btn btn-outline-dark display col-sm-4">Refresh</button>
+            
+          </div>
+      
+    </div>
+    <div class="form-section container col-sm-6">
+      <h2>Add your score</h2>
+      <form>
+        <div class="form-group mt-4">
+          
+          <input type="text" class="name" id="name" placeholder="Your name" name="name">
+        </div>
+        <div class="form-group mt-4">
+        
+          <input type="text" class="score" id="score" placeholder="Your score" name="score">
+        </div>
+        <div class="button-submit mt-4">
+          <button type="submit" class="btn btn-outline-dark align-right">Submit</button>
+        </div>
+      </form>
+      
+
+    </div>
+
+  </section>
 </body>
 </html>
