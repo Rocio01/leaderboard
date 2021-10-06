@@ -1,2 +1,5 @@
 import './style.css';
-alert("hello world");
+import 'bootstrap/dist/css/bootstrap.min.css';
+import loadEventListeners from './load';
+
+loadEventListeners();
