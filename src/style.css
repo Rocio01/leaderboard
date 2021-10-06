@@ -1,6 +1,8 @@
 
- tbody, tr, td {
-  border: none !important; 
+tbody,
+tr,
+td {
+  border: none !important;
 }
 
 tbody:nth-child(odd) {
