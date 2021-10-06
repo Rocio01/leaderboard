@@ -176,7 +176,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadEventListeners)\n/* harmony export */ });\n/* harmony import */ var _display__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./display */ \"./src/display.js\");\n/* harmony import */ var _Result__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Result */ \"./src/Result.js\");\n\n\n\nconst arr = [];\n\nconst wilmer = new _Result__WEBPACK_IMPORTED_MODULE_1__[\"default\"]('Wilmer', '100');\nconst paola = new _Result__WEBPACK_IMPORTED_MODULE_1__[\"default\"]('Paola', '100');\nconst alexis = new _Result__WEBPACK_IMPORTED_MODULE_1__[\"default\"]('alexis', '100');\nconst andrea = new _Result__WEBPACK_IMPORTED_MODULE_1__[\"default\"]('Andrea', '100');\n_Result__WEBPACK_IMPORTED_MODULE_1__[\"default\"].addResult(wilmer, arr);\n_Result__WEBPACK_IMPORTED_MODULE_1__[\"default\"].addResult(paola, arr);\n_Result__WEBPACK_IMPORTED_MODULE_1__[\"default\"].addResult(alexis, arr);\n_Result__WEBPACK_IMPORTED_MODULE_1__[\"default\"].addResult(andrea, arr);\n\nconst loadEventListeners = () => {\n  window.addEventListener('DOMContentLoaded', (0,_display__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(arr));\n};\n\n\n\n//# sourceURL=webpack://webpack-boilerplate/./src/load.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadEventListeners)\n/* harmony export */ });\n/* harmony import */ var _display__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./display */ \"./src/display.js\");\n/* harmony import */ var _manager__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./manager */ \"./src/manager.js\");\n\n\n\nconst arr = [];\nconst loadEventListeners = () => {\n  window.addEventListener('DOMContentLoaded', (0,_manager__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(arr, _display__WEBPACK_IMPORTED_MODULE_0__[\"default\"]));\n};\n\n\n\n//# sourceURL=webpack://webpack-boilerplate/./src/load.js?");
+
+/***/ }),
+
+/***/ "./src/manager.js":
+/*!************************!*\
+  !*** ./src/manager.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ managerArr)\n/* harmony export */ });\n/* harmony import */ var _Result__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Result */ \"./src/Result.js\");\n\n\nconst managerArr = (arr, myCallback) => {\n  const wilmer = new _Result__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('Wilmer', '100');\n  const paola = new _Result__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('Paola', '100');\n  const alexis = new _Result__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('alexis', '100');\n  const andrea = new _Result__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('Andrea', '100');\n\n  _Result__WEBPACK_IMPORTED_MODULE_0__[\"default\"].addResult(wilmer, arr);\n  _Result__WEBPACK_IMPORTED_MODULE_0__[\"default\"].addResult(paola, arr);\n  _Result__WEBPACK_IMPORTED_MODULE_0__[\"default\"].addResult(alexis, arr);\n  _Result__WEBPACK_IMPORTED_MODULE_0__[\"default\"].addResult(andrea, arr);\n\n  myCallback(arr);\n};\n\n\n\n//# sourceURL=webpack://webpack-boilerplate/./src/manager.js?");
 
 /***/ }),
 
