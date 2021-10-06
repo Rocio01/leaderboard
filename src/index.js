@@ -1,6 +1,5 @@
 import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import display from './display';
+import loadEventListeners from './load';
 
-display({ name: 'wilmer', score: '20' });
-display({ name: 'paola', score: '30' });
+loadEventListeners();

@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\r\\n  margin: 2%;\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://webpack-boilerplate/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"\\r\\n tbody, tr, td {\\r\\n  border: none !important; \\r\\n}\\r\\n\\r\\ntbody:nth-child(odd) {\\r\\n  background-color: white;\\r\\n}\\r\\n\\r\\ntbody:nth-child(even) {\\r\\n  background-color: rgb(243, 237, 237);\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://webpack-boilerplate/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -140,13 +140,23 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/Result.js":
+/*!***********************!*\
+  !*** ./src/Result.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Result)\n/* harmony export */ });\nclass Result {\n  constructor(name, score) {\n    this.name = name;\n    this.score = score;\n  }\n\n  static addResult(result, arr) {\n    arr.push(result);\n  }\n}\n\n\n\n\n//# sourceURL=webpack://webpack-boilerplate/./src/Result.js?");
+
+/***/ }),
+
 /***/ "./src/display.js":
 /*!************************!*\
   !*** ./src/display.js ***!
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ display)\n/* harmony export */ });\nconst display = (obj) => {\n  const displayContainer = document.querySelector('.display');\n  const table = document.createElement('table');\n  table.className = 'table table-striped';\n  const tbody = document.createElement('tbody');\n  table.appendChild(tbody);\n  tbody.innerHTML = `\n                         <tr scope=\"row\">      \n                            <td> ${obj.name}: ${obj.score}</td>\n                          </tr>\n                    \n                    `;\n\n  displayContainer.appendChild(table);\n};\n\n\n\n//# sourceURL=webpack://webpack-boilerplate/./src/display.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ display)\n/* harmony export */ });\nconst display = (arr) => {\n  const displayContainer = document.querySelector('.display');\n  const table = document.createElement('table');\n  table.className = 'table';\n\n  arr.forEach((obj) => {\n    const tbody = document.createElement('tbody');\n    tbody.className = 'px-4';\n    table.appendChild(tbody);\n    tbody.innerHTML = `\n                           <tr scope=\"row\">      \n                              <td> ${obj.name}:</td>\n                              <td> ${obj.score} </td>\n                            </tr>\n                      \n                      `;\n\n    displayContainer.appendChild(table);\n  });\n};\n\n\n\n//# sourceURL=webpack://webpack-boilerplate/./src/display.js?");
 
 /***/ }),
 
@@ -156,7 +166,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var _display__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./display */ \"./src/display.js\");\n\n\n\n\n(0,_display__WEBPACK_IMPORTED_MODULE_2__[\"default\"])({ name: 'wilmer', score: '20' });\n(0,_display__WEBPACK_IMPORTED_MODULE_2__[\"default\"])({ name: 'paola', score: '30' });\n\n//# sourceURL=webpack://webpack-boilerplate/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var _load__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./load */ \"./src/load.js\");\n\n\n\n\n(0,_load__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n\n//# sourceURL=webpack://webpack-boilerplate/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/load.js":
+/*!*********************!*\
+  !*** ./src/load.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadEventListeners)\n/* harmony export */ });\n/* harmony import */ var _display__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./display */ \"./src/display.js\");\n/* harmony import */ var _Result__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Result */ \"./src/Result.js\");\n\n\n\nconst arr = [];\n\nconst wilmer = new _Result__WEBPACK_IMPORTED_MODULE_1__[\"default\"]('Wilmer', '100');\nconst paola = new _Result__WEBPACK_IMPORTED_MODULE_1__[\"default\"]('Paola', '100');\nconst alexis = new _Result__WEBPACK_IMPORTED_MODULE_1__[\"default\"]('alexis', '100');\nconst andrea = new _Result__WEBPACK_IMPORTED_MODULE_1__[\"default\"]('Andrea', '100');\n_Result__WEBPACK_IMPORTED_MODULE_1__[\"default\"].addResult(wilmer, arr);\n_Result__WEBPACK_IMPORTED_MODULE_1__[\"default\"].addResult(paola, arr);\n_Result__WEBPACK_IMPORTED_MODULE_1__[\"default\"].addResult(alexis, arr);\n_Result__WEBPACK_IMPORTED_MODULE_1__[\"default\"].addResult(andrea, arr);\n\nconst loadEventListeners = () => {\n  window.addEventListener('DOMContentLoaded', (0,_display__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(arr));\n};\n\n\n\n//# sourceURL=webpack://webpack-boilerplate/./src/load.js?");
 
 /***/ }),
 

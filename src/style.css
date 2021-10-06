@@ -1,3 +1,12 @@
-body {
-  margin: 2%;
+
+ tbody, tr, td {
+  border: none !important; 
+}
+
+tbody:nth-child(odd) {
+  background-color: white;
+}
+
+tbody:nth-child(even) {
+  background-color: rgb(243, 237, 237);
 }
