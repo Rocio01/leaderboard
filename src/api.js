@@ -3,6 +3,7 @@ const gameId = 'kfdkP1FQT0NChZttPhkN';
 const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores`;
 
 const postScore = async (name, score) => {
+  try {
   const params = {};
   params.user = name.value;
   params.score = score.value;
@@ -15,8 +16,12 @@ const postScore = async (name, score) => {
   if (message.message === 'Error') {
     throw new Error(message.message);
   }
-  console.log(message);
+  
   return message;
+}catch (error) {
+
+  return error;
+}
 };
 
 const getScores = async () => {
@@ -28,7 +33,7 @@ const getScores = async () => {
     const { result } = data;
 
     display(result);
-    console.log(result);
+    
   } catch (error) {
     throw new Error(error.message);
   }
