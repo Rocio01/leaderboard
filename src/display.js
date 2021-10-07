@@ -21,5 +21,4 @@ const display = (arr) => {
   });
 };
 
-
 export { display as default };

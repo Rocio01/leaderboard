@@ -1,5 +1,4 @@
-import {getScores, postScore} from './api';
-
+import { getScores, postScore } from './api';
 
 const user = document.querySelector('#name');
 const score = document.querySelector('#score');
@@ -9,11 +8,11 @@ const refresh = document.querySelector('.refresh');
 
 const loadEventListeners = () => {
   window.addEventListener('DOMContentLoaded', getScores());
-  formButton.onclick = function(){
+  formButton.onclick = () => {
     postScore(user, score);
-  } 
-  
-  refresh.addEventListener("click", getScores)
+  };
+
+  refresh.addEventListener('click', getScores);
 };
 
 export { loadEventListeners as default };
