@@ -6,13 +6,13 @@ td {
 }
 
 tbody:nth-child(odd) {
-  background-color: white;
+  background-color: rgb(252, 252, 252);
 }
 
 tbody:nth-child(even) {
   background-color: rgb(243, 237, 237);
 }
 
-body {
-  padding: 1%;
+table {
+  border: 2px solid black !important ;
 }
