@@ -14,8 +14,9 @@
 - Webpack
 - Bootstrap
   
+## Live Demo
 
-
+[Live Demo Link](https://rocio01.github.io/leaderboard/)
 
 ## Getting Started
 
