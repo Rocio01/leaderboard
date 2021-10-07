@@ -1,5 +1,5 @@
 import display from "./display";
-const gameId = 'ZDxIEZDwVgeQEcdrzL0c';
+const gameId = 'kfdkP1FQT0NChZttPhkN';
 const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores`;
 
 const postScore = async (name, score) => {
