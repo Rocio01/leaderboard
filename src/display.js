@@ -1,16 +1,18 @@
-const display = (arr) => {
-  const displayContainer = document.querySelector('.display');
-  const table = document.createElement('table');
-  table.className = 'table';
+const displayContainer = document.querySelector('.display');
+const table = document.createElement('table');
+table.className = 'table';
 
+const display = (arr) => {
+  table.innerHTML = '';
   arr.forEach((obj) => {
+    const { user, score } = obj;
     const tbody = document.createElement('tbody');
     tbody.className = 'px-4';
     table.appendChild(tbody);
     tbody.innerHTML = `
                            <tr scope="row">      
-                              <td> ${obj.name}:</td>
-                              <td> ${obj.score} </td>
+                              <td> ${user}: </td>
+                              <td> ${score} </td>
                             </tr>
                       
                       `;
