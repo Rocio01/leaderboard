@@ -1,3 +1,4 @@
+import display from "./display";
 const gameId = 'ZDxIEZDwVgeQEcdrzL0c';
 const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores`;
 
