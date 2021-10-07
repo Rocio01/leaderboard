@@ -64,8 +64,6 @@ const postScore = async (name, score) => {
     throw new Error(message.message);
   }
   console.log(message);
-  // console.log(params)
-
   return message;
 };
 
